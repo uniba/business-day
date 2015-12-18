@@ -1,0 +1,28 @@
+{
+  "name": "@uniba/business-day",
+  "description": "Business days of Uniba Inc.",
+  "version": "1.0.0",
+  "author": "Ryo Murayama <ryo@uniba.jp>",
+  "bugs": {
+    "url": "https://github.com/uniba/business-day/issues"
+  },
+  "dependencies": {
+    "holiday-jp": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "files": [
+    "additional_holidays.json"
+  ],
+  "homepage": "https://github.com/uniba/business-day",
+  "keywords": [
+    "uniba"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "uniba/business-day",
+  "scripts": {
+    "test": "mocha test.js"
+  }
+}
