@@ -7,7 +7,7 @@
     "url": "https://github.com/uniba/business-day/issues"
   },
   "dependencies": {
-    "holiday-jp": "^0.1.0"
+    "holiday-jp": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^2.3.4"
