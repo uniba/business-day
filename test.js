@@ -40,4 +40,44 @@ describe('isOpen(date)', () => {
     const d = date(2016, 1, 4);
     assert(isOpen(d));
   });
+
+  it('2016/8/10は通常営業（平日）', () => {
+    const d = date(2016, 1, 4);
+    assert(isOpen(d));
+  });
+
+  it('2016/8/11は休み（祝日）', () => {
+    const d = date(2016, 8, 11);
+    assert(!isOpen(d));
+  });
+
+  it('2016/8/12は休み（夏休み）', () => {
+    const d = date(2016, 8, 12);
+    assert(!isOpen(d));
+  });
+
+  it('2016/8/13は休み（土曜日）', () => {
+    const d = date(2016, 8, 13);
+    assert(!isOpen(d));
+  });
+
+  it('2016/8/13は休み（日曜日）', () => {
+    const d = date(2016, 8, 14);
+    assert(!isOpen(d));
+  });
+
+  it('2016/8/15は休み（夏休み）', () => {
+    const d = date(2016, 8, 15);
+    assert(!isOpen(d));
+  });
+
+  it('2016/8/16は休み（夏休み）', () => {
+    const d = date(2016, 8, 16);
+    assert(!isOpen(d));
+  });
+
+  it('2016/8/10は通常営業（平日）', () => {
+    const d = date(2016, 8, 17);
+    assert(isOpen(d));
+  });
 });
