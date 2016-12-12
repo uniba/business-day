@@ -80,4 +80,39 @@ describe('isOpen(date)', () => {
     const d = date(2016, 8, 17);
     assert(isOpen(d));
   });
+
+  it('2016/12/29は休み（年末年始休日）', () => {
+    const d = date(2016, 12, 29);
+    assert(!isOpen(d));
+  });
+
+  it('2016/12/30は休み（年末年始休日）', () => {
+    const d = date(2016, 12, 30);
+    assert(!isOpen(d));
+  });
+
+  it('2016/12/31は休み（年末年始休日）', () => {
+    const d = date(2016, 12, 31);
+    assert(!isOpen(d));
+  });
+
+  it('2017/1/1は休み（年末年始休日）', () => {
+    const d = date(2017, 1, 1);
+    assert(!isOpen(d));
+  });
+
+  it('2017/1/2は休み（年末年始休日）', () => {
+    const d = date(2017, 1, 2);
+    assert(!isOpen(d));
+  });
+
+  it('2017/1/3は休み（年末年始休日）', () => {
+    const d = date(2017, 1, 3);
+    assert(!isOpen(d));
+  });
+
+  it('2017/1/4は通常営業（平日）', () => {
+    const d = date(2017, 1, 4);
+    assert(isOpen(d));
+  });
 });
