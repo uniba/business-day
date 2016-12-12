@@ -1,7 +1,7 @@
 {
   "name": "@uniba/business-day",
   "description": "Business days of Uniba Inc.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Ryo Murayama <ryo@uniba.jp>",
   "bugs": {
     "url": "https://github.com/uniba/business-day/issues"
